@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача 7</title>
+</head>
+<body>
+	<script>
+		const minDay = 0
+		const maxDay = 6
+		const minMonth = 1
+		const maxMonth = 12
+		let randomMonth = minMonth + Math.floor(Math.random() * (maxMonth - minMonth + 1))
+		let randomDay = minDay + Math.floor(Math.random() * (maxDay - minDay + 1) )
+		let sum = randomMonth + randomDay
+		document.write(`
+		<h2> Випадковий місяць ${randomMonth} </h2>
+			`)
+		document.write(`
+		<h2> Випадковий день ${randomDay} </h2>
+			`)
+		document.write(`
+		<h2> Сумма: ${sum} </h2>
+			`)
+
+	</script>
+	
+</body>
+</html>

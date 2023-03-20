@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 5</title>
+  </head>
+  <body>
+    <script>
+      let second = parseFloat(prompt("Введіть кількість секунд", "0"));
+      let hours = 3600;
+      let countHours = Math.floor(second / hours);
+      const minutes = 60;
+      let countMinutes = Math.floor(second % minutes);
+      document.write(
+        `Пройшло від початку доби ${countHours} год : ${countMinutes} хв`
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Задача 3</h1>
+
+    <script>
+      const taxProduct = 0.05
+      const priceProduct = parseFloat(prompt("Введіть ціну товару", '0'))
+      const quantProduct = parseInt(prompt('Ввести кількість товару', '0'))
+      let totalPriceProduct = priceProduct * quantProduct
+      let totalTaxProduct = (totalPriceProduct * taxProduct).toFixed(2)
+      document.write(`Загальна кількість товару - ${totalPriceProduct} грн; ПДВ - ${totalTaxProduct} грн`)
+    </script>
+  </body>
+</html>

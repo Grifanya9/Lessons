@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 5</title>
+  </head>
+  <body>
+    <script>
+      const quantFirst = parseFloat(
+        prompt("Введіть кількість першого товару", "0")
+      );
+      const priceFirst = parseInt(
+        prompt("Введіть вартість першого товару", "0")
+      );
+      const quantSecond = parseFloat(
+        prompt("Введіть кількість другого товару", "0")
+      );
+      const priceSecond = parseInt(
+        prompt("Введіть вартість другого товару", "0")
+      );
+      const quantThird = parseFloat(
+        prompt("Введіть кількість третього товару", "0")
+      );
+      const priceThird = parseInt(
+        prompt("Введіть вартість третього товару", "0")
+      );
+      let totalFirstPrice = quantFirst * priceFirst;
+      let totalSecondPrice = quantSecond * priceSecond;
+      let totalThirdPrice = quantThird * priceThird;
+      let totalSum = totalFirstPrice + totalSecondPrice + totalThirdPrice;
+      document.write(`
+		<table border = 5px>
+			<tr>
+				<td>Вартість</td>
+				<td>Кількість</td>
+				<td>Сумма</td>
+			</tr>
+			<tr>
+				<td>Перший товар: ${priceFirst}</td>
+				<td>${quantFirst}</td>
+				<td>${totalFirstPrice.toFixed(3)}</td>
+			</tr>
+			<tr>
+				<td>Другий товар: ${quantSecond}</td>
+				<td>${priceSecond}</td>
+				<td>${totalSecondPrice.toFixed(3)}</td>
+			</tr>
+			<tr>
+				<td>Третій товар: ${quantThird}</td>
+				<td>${priceThird}</td>
+				<td>${totalThirdPrice.toFixed(3)}</td>
+			</tr>
+			<tr>
+				<td>Всього</td>
+				<td></td>
+				<td>${totalSum.toFixed(3)}</td>
+			</tr>
+			</table>
+		`);
+    </script>
+  </body>
+</html>
