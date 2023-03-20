@@ -8,14 +8,19 @@
   </head>
   <body>
     <h1>Задача 3</h1>
-
+    <h2>
+      Дано вартість одиниці товару і кількість. Знайти загальну вартість та ПДВ
+      (5% від загальної вартості).
+    </h2>
     <script>
-      const taxProduct = 0.05
-      const priceProduct = parseFloat(prompt("Введіть ціну товару", '0'))
-      const quantProduct = parseInt(prompt('Ввести кількість товару', '0'))
-      let totalPriceProduct = priceProduct * quantProduct
-      let totalTaxProduct = (totalPriceProduct * taxProduct).toFixed(2)
-      document.write(`Загальна кількість товару - ${totalPriceProduct} грн; ПДВ - ${totalTaxProduct} грн`)
+      const taxProduct = 0.05;
+      const priceProduct = parseFloat(prompt("Введіть ціну товару", "0"));
+      const quantProduct = parseInt(prompt("Ввести кількість товару", "0"));
+      let totalPriceProduct = priceProduct * quantProduct;
+      let totalTaxProduct = (totalPriceProduct * taxProduct).toFixed(2);
+      document.write(
+        `Загальна кількість товару - ${totalPriceProduct} грн; ПДВ - ${totalTaxProduct} грн`
+      );
     </script>
   </body>
 </html>

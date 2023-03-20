@@ -8,13 +8,17 @@
   </head>
   <body>
     <h1>Задача 1</h1>
+    <h2>
+      Знайти суму, добуток та частку двох дійсних чисел. Результат вивести у
+      формі таблиці.
+    </h2>
     <script>
-   	const a = parseFloat(prompt('Введіть перше число'))
-      const b = parseFloat(prompt('Введіть друге число'))
+      const a = parseFloat(prompt("Введіть перше число"));
+      const b = parseFloat(prompt("Введіть друге число"));
 
       let sum = a + b,
-      mult = a * b,
-      div = a / b
+        mult = a * b,
+        div = a / b;
 
       document.write(`
         <table border="3px">
@@ -26,7 +30,7 @@
             </tr>
           </tbody>
         </table>
-        `)
+        `);
     </script>
   </body>
 </html>
